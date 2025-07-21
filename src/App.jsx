@@ -1,16 +1,14 @@
 import React from "react";
-import { Route, Router, Routes } from "react-router-dom";
-import Home from "./Pages/Home";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import SplashHome from "./Pages/SplashHome";
 
 const App = () => {
   return (
-    <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </Router>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<SplashHome />} />
+      </Routes>
+    </Router>
   );
 };
 
