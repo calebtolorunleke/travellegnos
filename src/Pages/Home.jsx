@@ -1,6 +1,9 @@
 import React from "react";
 import homevid from "../video/homeVid.mp4";
 import Header from "../components/Header";
+import Features from "../components/Features";
+import TripBuilder from "../components/TripBuilder";
+import Contact from "../components/Contact";
 
 const Home = () => {
   return (
@@ -13,8 +16,11 @@ const Home = () => {
         muted
         playsInline
       />
-      <div className="relative z-[50]">
+      <div className=" z-[50]">
         <Header />
+        <Features />
+        <TripBuilder />
+        <Contact />
       </div>
     </main>
   );
