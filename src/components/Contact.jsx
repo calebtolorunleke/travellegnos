@@ -26,9 +26,9 @@ const Contact = () => {
       </div>
       <div>
         <div className="bg-black">
-          <img src={pinterest} alt="" />
+          <img src={pinterest} alt="pinterest" />
           {/* <img src={} alt="" /> */}
-          <img src="" alt="" />
+          <img src={instagram} alt="" />
           <img src="" alt="" />
           <img src="" alt="" />
         </div>
