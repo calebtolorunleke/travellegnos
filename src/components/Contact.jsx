@@ -12,7 +12,9 @@ const Contact = () => {
       <div className="flex flex-row gap-1 items-center justify-end px-12 ">
         <div className="bg-white flex flex-row px-3 py-3 gap-2 items-center rounded">
           <img src={flag} className="w-12 h-8" alt="" />
-          <span className="font-bold">EN ></span>
+          <span className="font-bold">
+            EN <span className="ml-1">&gt;</span>
+          </span>
         </div>
       </div>
       <div className="px-12 flex items-center flex-col gap-5">
