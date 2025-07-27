@@ -31,7 +31,7 @@ const Contact = () => {
           <img src={facebook} alt="pinterest" className="w-5 h-5" />
           {/* <img src={} alt="" /> */}
           <img src={x} alt="xtwitter" className="w-5 h-5" />
-          <img src="" alt="" />
+          <img src={pinterest} alt="" />
           <img src="" alt="" />
         </div>
         <div>
