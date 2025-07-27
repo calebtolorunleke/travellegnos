@@ -1,6 +1,6 @@
 import React from "react";
 import flag from "../images/flag.png";
-import facebook from "../images/icons/facebook.jpg";
+import facebook from "../images/icons/facebook.png";
 import x from "../images/icons/x.png";
 import pinterest from "../images/icons/pinterest.png";
 import instagram from "../images/icons/instagram.png";
@@ -28,9 +28,9 @@ const Contact = () => {
       </div>
       <div>
         <div className="bg-black">
-          <img src={pinterest} alt="pinterest" />
+          <img src={facebook} alt="pinterest" className="w-5 h-5" />
           {/* <img src={} alt="" /> */}
-          <img src={instagram} alt="" />
+          <img src={x} alt="xtwitter" className="w-5 h-5" />
           <img src="" alt="" />
           <img src="" alt="" />
         </div>
