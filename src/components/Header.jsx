@@ -10,7 +10,7 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
   return (
     <main className="h-screen flex flex-col">
-      <div className="flex fixed w-full flex-row justify-between items-center text-white py-3 px-12 bg-gray-600">
+      <div className="flex fixed w-full flex-row justify-between items-center text-white py-3 px-12 bg-gray-600 z-50">
         <span className="flex flex-row gap-1 items-center cursor-pointer">
           <img src={logo} alt="" className="w-15 h-15" />
           <span className="text-2xl uppercase">legnos</span>
@@ -31,31 +31,27 @@ const Header = () => {
             Search for Hotels
           </button>
           <button
-            className="opacity-"
+            className=""
             value={menuu}
             onClick={() => setMenu(menu ? false : true)}
           >
             {menu ? (
               <img src={cancel} className="w-10 h-8 cursor-pointer" />
             ) : (
-              <img src={menuu} className="w-10 h-8 cursor-pointer" />
+              <img src={menuu} className="w-10 h-8 cursor-pointer " />
             )}
           </button>
         </ul>
       </div>
-      {menu && (
-        <div className="absolute fixed">
-          <PhoneMenu />
-        </div>
-      )}
+      {menu && <PhoneMenu />}
       <div className="w-full h-full flex items-center justify-center  flex-col items-center">
         <div className="w-full h-full flex items-center justify-center">
-          <span className="text-[7rem] text-white font-bold uppercase">
+          <span className="text-[3rem] lg:text-[7rem] text-white font-bold uppercase">
             travel
           </span>
           <span className="flex flex-row gap-1 items-center cursor-pointer">
             <img src={logo} alt="" className="w-30 h-30" />
-            <span className="text-[7rem] text-white font-bold uppercase">
+            <span className="text-[3rem] lg:text-[7rem] text-white font-bold uppercase">
               legnos
             </span>
           </span>

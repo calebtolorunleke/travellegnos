@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="text-white bg-blue-900 py-10 items-center flex flex-col gap-5">
       <div className="flex flex-col items-center">
-        <h1>
+        <h1 className="text-center">
           All Material © 2025 Office of the Governor, Texas Economic Development
           & Tourism Office. All Rights Reserved.
         </h1>

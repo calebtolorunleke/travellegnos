@@ -4,8 +4,8 @@ import trip from "../images/trip.svg";
 const TripBuilder = () => {
   return (
     <main className="text-black   items-center justify-center w-full py-[10rem] px-12">
-      <div className="w-full grid grid-cols-2 gap-5 py-10 bg-white h-full">
-        <div className="grid grid-cols-2 py-15 px-12 items-cente border-r-1 border-gray-500 h-full justify-center w-full px-8">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-5 py-10 bg-white h-full">
+        <div className="grid grid-cols-2 py-15 lg:px-12 items-cente border-b-2 lg:border-r-2 border-gray-500 h-full justify-center w-full px-8">
           <img src={trip} className="w-50 h-50" alt="" />
           <div className="flex flex-col gap-3">
             <h1 className="uppercase text-4xl font-bold">lagos trip builder</h1>
