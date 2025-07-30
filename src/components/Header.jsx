@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import searchIcon from "../images/icons/searchicon.png";
 import share from "../images/icons/shareicon.png";
 import logo from "../assets/logo.png";
 import menuu from "../images/icons/menuicon.png";
+import cancel from "../images/icons/cancelicon.png";
 
 const Header = () => {
+  const [menu, setMenu] = useState(false);
   return (
     <main className="h-screen flex flex-col">
       <div className="flex fixed w-full flex-row justify-between items-center text-white py-3 px-12 bg-gray-600">
@@ -18,7 +20,7 @@ const Header = () => {
           <li className="cursor-pointer">Plan Ahead</li>
           <li className="cursor-pointer">Where To Stay</li>
         </ul>
-        <ul className="flex flex-row gap-5 items-center">
+        <ul className="flex relative flex-row gap-5 items-center">
           <img src={searchIcon} className="w-5 h-5" alt="" />
           <span className="flex flex-row gap-1 cursor-pointer">
             <img src={share} className="w-5 h-5" alt="" />
@@ -27,8 +29,19 @@ const Header = () => {
           <button className="hidden xl:block bg-blue-900 px-3 rounded-3xl border  border-2 border-white py-1 cursor-pointer">
             Search for Hotels
           </button>
-          <img src={menuu} className="w-10 h-8 cursor-pointer" />
+          <button
+            className=""
+            value={menuu}
+            onClick={() => setMenu(menu ? false : true)}
+          >
+            {menu ? (
+              <img src={cancel} className="w-10 h-8 cursor-pointer" />
+            ) : (
+              <img src={menuu} className="w-10 h-8 cursor-pointer" />
+            )}
+          </button>
         </ul>
+        {menu && <p className="absolute">true</p>}
       </div>
       <div className="w-full h-full flex items-center justify-center  flex-col items-center">
         <div className="w-full h-full flex items-center justify-center">
