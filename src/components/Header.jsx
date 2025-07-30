@@ -4,6 +4,7 @@ import share from "../images/icons/shareicon.png";
 import logo from "../assets/logo.png";
 import menuu from "../images/icons/menuicon.png";
 import cancel from "../images/icons/cancelicon.png";
+import PhoneMenu from "./PhoneMenu";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -41,7 +42,11 @@ const Header = () => {
             )}
           </button>
         </ul>
-        {menu && <p className="absolute">true</p>}
+        {menu && (
+          <div className="absolute">
+            <PhoneMenu />
+          </div>
+        )}
       </div>
       <div className="w-full h-full flex items-center justify-center  flex-col items-center">
         <div className="w-full h-full flex items-center justify-center">
