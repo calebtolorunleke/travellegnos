@@ -21,7 +21,7 @@ const Header = () => {
           <li className="cursor-pointer">Plan Ahead</li>
           <li className="cursor-pointer">Where To Stay</li>
         </ul>
-        <ul className="flex relative flex-row gap-5 items-center">
+        <ul className="flex  flex-row gap-5 items-center">
           <img src={searchIcon} className="w-5 h-5" alt="" />
           <span className="flex flex-row gap-1 cursor-pointer">
             <img src={share} className="w-5 h-5" alt="" />
@@ -31,7 +31,7 @@ const Header = () => {
             Search for Hotels
           </button>
           <button
-            className=""
+            className="opacity-"
             value={menuu}
             onClick={() => setMenu(menu ? false : true)}
           >
@@ -42,12 +42,12 @@ const Header = () => {
             )}
           </button>
         </ul>
-        {menu && (
-          <div className="absolute">
-            <PhoneMenu />
-          </div>
-        )}
       </div>
+      {menu && (
+        <div className="absolute fixed">
+          <PhoneMenu />
+        </div>
+      )}
       <div className="w-full h-full flex items-center justify-center  flex-col items-center">
         <div className="w-full h-full flex items-center justify-center">
           <span className="text-[7rem] text-white font-bold uppercase">
