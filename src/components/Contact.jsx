@@ -37,7 +37,7 @@ const Contact = () => {
         <h1 className="text-white">privacy policy & terms of use</h1>
       </div>
       <div className="flex flex-col lg:flex-row  gap-2 border-r-2 items-center justify-center py-10 my-10">
-        <div className="flex flex-row  gap-2 border-r-2 justify-between  border-r-2 border-white py-5 px-7">
+        <div className="flex flex-row flex-wrap gap-2 border-b-2 border-gray-400 lg:border-r-2 justify-between  py-5 px-7">
           <img src={facebook} alt="pinterest" className="w-20 h-20" />
           {/* <img src={} alt="" /> */}
           <img src={x} alt="xtwitter" className="w-20 h-20" />
@@ -53,16 +53,52 @@ const Contact = () => {
             className="w-6 h-6 rounded rounded-full rounded-white w-20 h-20"
           />
         </div>
-        <div className="flex flex-row flex-wrap gap-2 justify-between items-center">
-          <img src={company1} alt="" className="w-20 h-20 mx-3" />
-          <img src={company2} alt="" className="w-20 h-20 mx-3" />
-          <img src={company3} alt="" className="w-20 h-20 mx-3" />
-          <img src={company4} alt="" className="w-20 h-20 mx-3" />
-          <img src={company5} alt="" className="w-20 h-20 mx-3" />
-          <img src={company6} alt="" className="w-20 h-20 mx-3" />
-          <img src={company7} alt="" className="w-20 h-20 mx-3" />
-          <img src={company8} alt="" className="w-20 h-20 mx-3" />
-          <img src={company9} alt="" className="w-20 h-20 mx-3" />
+        <div className="flex flex-row flex-wrap py-10 gap-1 justify-between items-center">
+          <img
+            src={company1}
+            alt=""
+            className="w-15 lg:w-20 h-15 lg:h-20 mx-3"
+          />
+          <img
+            src={company2}
+            alt=""
+            className="w-15 lg:w-20 h-15 lg:h-20 mx-3"
+          />
+          <img
+            src={company3}
+            alt=""
+            className="w-15 lg:w-20 h-15 lg:h-20 mx-3"
+          />
+          <img
+            src={company4}
+            alt=""
+            className="w-15 lg:w-20 h-15 lg:h-20 mx-3"
+          />
+          <img
+            src={company5}
+            alt=""
+            className="w-15 lg:w-20 h-15 lg:h-20 mx-3"
+          />
+          <img
+            src={company6}
+            alt=""
+            className="w-15 lg:w-20 h-15 lg:h-20 mx-3"
+          />
+          <img
+            src={company7}
+            alt=""
+            className="w-15 lg:w-20 h-15 lg:h-20 mx-3"
+          />
+          <img
+            src={company8}
+            alt=""
+            className="w-15 lg:w-20 h-15 lg:h-20 mx-3"
+          />
+          <img
+            src={company9}
+            alt=""
+            className="w-15 lg:w-20 h-15 lg:h-20 mx-3"
+          />
         </div>
       </div>
     </main>
