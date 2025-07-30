@@ -2,6 +2,7 @@ import React from "react";
 import searchIcon from "../images/icons/searchicon.png";
 import share from "../images/icons/shareicon.png";
 import logo from "../assets/logo.png";
+import menuu from "../images/icons/menuicon.png";
 
 const Header = () => {
   return (
@@ -11,7 +12,7 @@ const Header = () => {
           <img src={logo} alt="" className="w-15 h-15" />
           <span className="text-2xl uppercase">legnos</span>
         </span>
-        <ul className="flex flex-row font-bold items-center gap-10">
+        <ul className="hidden xl:flex flex-row font-bold items-center gap-10">
           <li className="cursor-pointer">Things To Do</li>
           <li className="cursor-pointer">Cities & Region</li>
           <li className="cursor-pointer">Plan Ahead</li>
@@ -23,9 +24,10 @@ const Header = () => {
             <img src={share} className="w-5 h-5" alt="" />
             <span>Share</span>
           </span>
-          <button className="bg-blue-900 px-3 rounded-3xl border  border-2 border-white py-1 cursor-pointer">
+          <button className="hidden xl:block bg-blue-900 px-3 rounded-3xl border  border-2 border-white py-1 cursor-pointer">
             Search for Hotels
           </button>
+          <img src={menuu} className="w-10 h-8 cursor-pointer" />
         </ul>
       </div>
       <div className="w-full h-full flex items-center justify-center  flex-col items-center">

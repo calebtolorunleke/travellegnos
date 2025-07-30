@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Features from "../components/Features";
 import TripBuilder from "../components/TripBuilder";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         <Features />
         <TripBuilder />
         <Contact />
+        <Footer />
       </div>
     </main>
   );
