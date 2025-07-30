@@ -8,6 +8,7 @@ import PhoneMenu from "./PhoneMenu";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
+  const [openSearch, setopenSearch] = useState(false);
   return (
     <main className="h-screen flex flex-col">
       <div className="flex fixed w-full flex-row justify-between items-center text-white py-3 px-12 bg-gray-600 z-50">
@@ -16,22 +17,48 @@ const Header = () => {
           <span className="text-2xl uppercase">legnos</span>
         </span>
         <ul className="hidden xl:flex flex-row font-bold items-center gap-10">
-          <li className="cursor-pointer">Things To Do</li>
-          <li className="cursor-pointer">Cities & Region</li>
-          <li className="cursor-pointer">Plan Ahead</li>
-          <li className="cursor-pointer">Where To Stay</li>
+          <li className="cursor-pointer">
+            <a href="/prod">Things To Do</a>
+          </li>
+          <li className="cursor-pointer">
+            <a href="/prod">Cities & Region</a>
+          </li>
+          <li className="cursor-pointer">
+            <a href="/prod">Plan Ahead</a>
+          </li>
+          <li className="cursor-pointer">
+            <a href="/prod">Where To Stay</a>
+          </li>
         </ul>
         <ul className="flex  flex-row gap-5 items-center">
-          <img src={searchIcon} className="w-5 h-5" alt="" />
+          {openSearch && (
+            <input
+              type="text"
+              className="border-b-2 px-2 hove:border-2 focus:outline-none focus:bg-gray-700 focus:shadow-xl"
+              placeholder="Search...."
+            />
+          )}
+
+          <button
+            value={openSearch}
+            onClick={() => setopenSearch(openSearch ? false : true)}
+          >
+            {openSearch ? (
+              <img src={cancel} className="w-5 h-5 cursor-pointer" alt="" />
+            ) : (
+              <img src={searchIcon} className="w-5 h-5 cursor-pointer" alt="" />
+            )}
+          </button>
+
           <span className="flex flex-row gap-1 cursor-pointer">
-            <img src={share} className="w-5 h-5" alt="" />
+            <img src={share} className="w-5 h-5 cursor-pointer" alt="" />
             <span>Share</span>
           </span>
-          <button className="hidden xl:block bg-blue-900 px-3 rounded-3xl border  border-2 border-white py-1 cursor-pointer">
-            Search for Hotels
+          <button className="hidden lg:block bg-blue-900 px-3 rounded-3xl border  border-2 border-white py-1 cursor-pointer">
+            <a href="/prod">Search for Hotels</a>
           </button>
           <button
-            className=""
+            className="xl:hidden"
             value={menuu}
             onClick={() => setMenu(menu ? false : true)}
           >

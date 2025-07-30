@@ -3,7 +3,7 @@ import React from "react";
 const Features = () => {
   return (
     <main className="h-screen grid lg:grid-cols-3 textiwhite pt-20 items-center text-white  font-bold text-4xl">
-      <div className="group  flex gap-3 flex-col w-full justify-center items-center border-b-2 lg:border-r-2  h-full hover:bg-black/30">
+      <div className="group  flex gap-3 flex-col w-full justify-center items-center border-b-2 lg:border-b-0 lg:border-r-2  h-full hover:bg-black/30">
         <span className="uppercase">things to do</span>
         {/* <span className="text-sm text-center opacity-0 hover:opacity-100"> */}
         <span className="text-sm text-center hidden lg:group-hover:block ">
@@ -14,7 +14,7 @@ const Features = () => {
           View More
         </button>
       </div>
-      <div className="group  flex gap-3 flex-col w-full justify-center items-center border-b-2 lg:border-r-2  h-full hover:bg-black/30 ">
+      <div className="group  flex gap-3 flex-col w-full justify-center items-center border-b-2 lg:border-b-0 lg:border-r-2  h-full hover:bg-black/30 ">
         <span className="uppercase">CITIES & REGIONS</span>
         {/* <span className="text-sm text-center opacity-0 hover:opacity-100"> */}
         <span className="text-sm text-center hidden lg:group-hover:block">

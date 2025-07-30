@@ -37,7 +37,7 @@ const Contact = () => {
         <h1 className="text-white">privacy policy & terms of use</h1>
       </div>
       <div className="flex flex-col lg:flex-row  gap-2 border-r-2 items-center justify-center py-10 my-10">
-        <div className="flex flex-row flex-wrap gap-2 border-b-2 border-gray-400 lg:border-r-2 justify-between  py-5 px-7">
+        <div className="flex flex-row flex-wrap gap-2 border-b-2 border-gray-400  lg:border-b-0 lg:border-r-2 justify-between  py-5 px-7">
           <img src={facebook} alt="pinterest" className="w-20 h-20" />
           {/* <img src={} alt="" /> */}
           <img src={x} alt="xtwitter" className="w-20 h-20" />
